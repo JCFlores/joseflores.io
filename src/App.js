@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ProfileCard from './components/ProfileCard';
 import { injectGlobal } from 'styled-components';
 import reset from 'styled-reset';
-import Header from './components/Header';
+import NavBar from './components/NavBar';
 
 const baseStyles = () => injectGlobal`
   ${reset};
@@ -14,7 +13,7 @@ class App extends React.Component {
   render() {
     baseStyles();
     return (
-        <Header />
+        <NavBar />
     );
   }
 }
