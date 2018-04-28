@@ -3,10 +3,11 @@ import ReactDOM from "react-dom";
 import fontawesome from "@fortawesome/fontawesome";
 import FontAwesomeIcon from "@fortawesome/react-fontawesome";
 import brands from "@fortawesome/fontawesome-free-brands";
-import envelope from "@fortawesome/fontawesome-free-solid";
+import solid from "@fortawesome/fontawesome-free-solid";
+import regular from "@fortawesome/fontawesome-free-regular";
 import styled from "styled-components";
 
-const BrandNav = styled.nav`
+const Nav = styled.nav`
   background-color: #d75656;
   height: auto;
   min-height: 100vh;
@@ -18,17 +19,17 @@ const BrandNav = styled.nav`
   left: 0;
 `;
 
-const Brand = styled.h1`
+const Title = styled.h1`
   font-size: 30px;
   display: inline-block;
   vertical-align: middle;
 `;
 
-const BrandUl = styled.ul`
+const NavUl = styled.ul`
   text-align: center;
 `;
 
-const BrandItem = styled.a`
+const NavItem = styled.a`
   display: inline-block;
   margin: 0px 16px;
   cursor: pointer;
@@ -38,22 +39,28 @@ const BrandItem = styled.a`
 class NavBar extends React.Component {
   render() {
     return (
-          <BrandNav>
-            <BrandUl>
-              <BrandItem href="https://www.twitter.com/joseflores_io">
+          <Nav>
+            <NavUl>
+              <NavItem href="https://www.twitter.com/joseflores_io">
                 <FontAwesomeIcon icon={["fab", "twitter"]} size="8x" />
-              </BrandItem>
-              <BrandItem href="https://www.github.com/JCFlores">
+              </NavItem>
+              <NavItem href="https://www.github.com/JCFlores">
                 <FontAwesomeIcon icon={["fab", "github"]} size="8x" />
-              </BrandItem>
-              <BrandItem href="#">
+              </NavItem>
+              <NavItem href="#">
                 <FontAwesomeIcon icon={["fab", "linkedin"]} size="8x" />
-              </BrandItem>
-              <BrandItem href="#">
+              </NavItem>
+              <NavItem href="#">
                 <FontAwesomeIcon icon={["fas", "envelope"]} size="8x" />
-              </BrandItem>
-            </BrandUl>
-          </BrandNav>
+              </NavItem>
+              <NavItem href="#">
+                <FontAwesomeIcon icon={["far", "id-card"]} size="8x" />
+              </NavItem>
+              <NavItem href="#">
+                <FontAwesomeIcon icon={["far", "file-code"]} size="8x" />
+              </NavItem>
+            </NavUl>
+          </Nav>
     );
   }
 }
