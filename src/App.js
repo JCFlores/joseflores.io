@@ -6,16 +6,15 @@ import reset from 'styled-reset';
 import Header from './components/Header';
 
 const baseStyles = () => injectGlobal`
-  ${reset}
+  ${reset};
+  box-sizing: border-box;
 `;
 
 class App extends React.Component {
   render() {
     baseStyles();
     return (
-      <div>
         <Header />
-      </div>
     );
   }
 }
