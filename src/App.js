@@ -1,7 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ProfileCard from './components/ProfileCard';
+import { injectGlobal } from 'styled-components';
+import reset from 'styled-reset';
+import Header from './components/Header';
+
+const baseStyles = () => injectGlobal`
+  ${reset}
+`;
+
+class App extends React.Component {
+  render() {
+    baseStyles();
+    return (
+      <div>
+        <Header />
+      </div>
+    );
+  }
+}
 
 ReactDOM.render(
-  <h1>Hello Mundo!!!</h1>,
-  document.getElementById('root')
-);
+  <App />,
+  document.querySelector('#root')
+)
