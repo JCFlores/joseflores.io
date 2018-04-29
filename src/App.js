@@ -1,19 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { injectGlobal } from 'styled-components';
-import reset from 'styled-reset';
-import NavBar from './components/NavBar';
+import React from "react";
+import ReactDOM from "react-dom";
+import { injectGlobal } from "styled-components";
+import reset from "styled-reset";
+import NavBar from "./components/NavBar";
+import Header from "./components/Header";
+import Router from "./components/Router";
 
 const baseStyles = () => injectGlobal`
   ${reset};
-  box-sizing: border-box;
 `;
 
 class App extends React.Component {
-  render() {
+  state = {title: 'joseflores.io'};
+  
+  render() {   
     baseStyles();
     return (
+      <div>
         <NavBar />
+        <Header title={this.state.title}/>
+        <Router />
+      </div>
     );
   }
 }

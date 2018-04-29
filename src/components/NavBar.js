@@ -7,7 +7,7 @@ import solid from "@fortawesome/fontawesome-free-solid";
 import regular from "@fortawesome/fontawesome-free-regular";
 import styled from "styled-components";
 
-const Nav = styled.nav`
+const Nav = styled.section`
   height: 100%;
   width: 13rem;
   position: fixed;
@@ -16,11 +16,7 @@ const Nav = styled.nav`
   background-color: #CC6666;
 `;
 
-const SplitNav = Nav.extend`
-  background-color: #fff;
-`;
-
-const NavUl = styled.ul`
+const NavUl = styled.nav`
   position: relative;
   text-align: center;
   height: 100%;
