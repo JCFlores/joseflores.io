@@ -14,7 +14,7 @@ const baseStyles = () => injectGlobal`
 `;
 
 const ContentArea = styled.div`
-  height: auto;
+  height: 100%;
   width: 85%;
   position: relative;
   float: left;
@@ -22,7 +22,7 @@ const ContentArea = styled.div`
 
 class App extends React.Component {
   state = {
-    title: "joseflores.io"
+    title: "joseflores.io",
   };
 
   render() {

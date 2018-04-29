@@ -1,15 +1,12 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
-  entry: [
-    'react-hot-loader/patch',
-    './src/app.js'
-  ],
+  entry: ["react-hot-loader/patch", "./src/app.js"],
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/"
   },
   module: {
     rules: [
@@ -17,20 +14,24 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader"
+        }
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: {
+          loader: "file-loader"
         }
       }
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ["*", ".js", ".jsx"]
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
   devServer: {
     historyApiFallback: true,
-    contentBase: './dist',
+    contentBase: "./dist",
     hot: true
   }
-}
+};

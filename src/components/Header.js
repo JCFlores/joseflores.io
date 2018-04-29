@@ -13,6 +13,8 @@ const SiteHeader = styled.header`
   font-size: 36px;
   text-align: center;
   box-shadow: 0px 0px 20px 0px;
+  background-color: #2c2c2c;
+  color: #afafaf;
 `;
 
 const Header = (props) => (

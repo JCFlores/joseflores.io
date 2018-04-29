@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
+import img from "../img/wood-laptop.jpg";
 
 const Container = styled.div`
   position: relative;
@@ -12,18 +13,18 @@ const Container = styled.div`
   1px solid black;
 `;
 
-const Hh1 = styled.h1`
-  border: 1px solid black;
-  height: auto;
-  width: auto;
-  vertical-align: middle;
+const Content = styled.div`
+  background: url(${img}) left 10% top/cover no-repeat;
+  background-position: cover;
+  height: 100%;
+  width: 100%;
 `;
 
 class AboutMe extends React.Component {
   render() {
     return (
       <Container>
-        <Hh1>About Me</Hh1>
+        <Content />
       </Container>
     );
   }
