@@ -9,17 +9,16 @@ import styled from "styled-components";
 
 const Nav = styled.section`
   height: 100%;
-  width: 13rem;
-  position: fixed;
-  top: 0;
-  left: 0;
+  width: 15%;
+  position: relative;
+  display: block;
+  float: left;
   background-color: #CC6666;
-  border-right: 2px solid #222;
   box-shadow: 0px 5px 20px 5px;
 `;
 
 const NavUl = styled.nav`
-  position: relative;
+  position: absolute;
   text-align: center;
   height: 100%;
   width: 100%;
