@@ -11,21 +11,20 @@ const baseStyles = () => injectGlobal`
 `;
 
 class App extends React.Component {
-  state = {title: 'joseflores.io'};
-  
-  render() {   
+  state = {
+    title: "joseflores.io"
+  };
+
+  render() {
     baseStyles();
     return (
       <div>
         <NavBar />
-        <Header title={this.state.title}/>
+        <Header title={this.state.title} />
         <Router />
       </div>
     );
   }
 }
 
-ReactDOM.render(
-  <App />,
-  document.querySelector('#root')
-)
+ReactDOM.render(<App />, document.querySelector("#root"));
