@@ -3,18 +3,16 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 
 const SiteHeader = styled.header`
-  display: inline-block;
-  position: relative;
-  float: left;
+  display: block;
+  position: fixed;
   padding: 2rem;
   width: 100%;
-  z-index: -1;
-  color: #2c2c2c;
-  font-size: 36px;
-  text-align: center;
+  font-size: 34px;
   box-shadow: 0px 0px 20px 0px;
   background-color: #2c2c2c;
   color: #afafaf;
+  margin-left: 2em;
+  z-index: 1;
 `;
 
 const Header = (props) => (

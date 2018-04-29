@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import styled, {injectGlobal} from "styled-components";
+import styled, { injectGlobal } from "styled-components";
 import reset from "styled-reset";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import Router from "./components/Router";
+import img from "./img/wood-laptop.jpg";
 
 const baseStyles = () => injectGlobal`
   ${reset};
@@ -13,27 +14,44 @@ const baseStyles = () => injectGlobal`
   };
 `;
 
+const Container = styled.div`
+  height: 100%;
+  text-align: center;
+`;
+
+const Content = styled.div`
+  margin: 6em 0 0 5em;
+  position fixed;
+  background: url(${img}) left 10% top/cover no-repeat;
+  height: 100%;
+  width: 100%;
+`;
+
 const ContentArea = styled.div`
   height: 100%;
-  width: 85%;
+  width: 100%;
   position: relative;
   float: left;
 `;
 
 class App extends React.Component {
   state = {
-    title: "joseflores.io",
+    title: "joseflores.io"
   };
 
   render() {
     baseStyles();
     return (
       <div id="main">
-        <NavBar />
-        <ContentArea >
+        <Container>
+          <NavBar />
           <Header title={this.state.title} />
-          <Router />
-        </ContentArea>
+          <ContentArea>
+            <Content>
+              <Router />
+            </Content>
+          </ContentArea>
+        </Container>
       </div>
     );
   }

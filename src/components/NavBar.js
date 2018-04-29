@@ -10,7 +10,8 @@ import styled from "styled-components";
 const Nav = styled.section`
   height: 100%;
   width: 15%;
-  position: relative;
+  position: fixed;
+  z-index: 2;
   display: block;
   float: left;
   background-color: #CC6666;
