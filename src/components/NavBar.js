@@ -9,13 +9,13 @@ import styled from "styled-components";
 
 const Nav = styled.section`
   height: 100%;
-  width: 15%;
+  width: 10%;
   position: fixed;
   z-index: 2;
   display: block;
   float: left;
-  background-color: #CC6666;
-  box-shadow: 0px 5px 20px 5px;
+  background-color: #a1a1a1;
+  box-shadow: 0px 0px 1px 0px;
 `;
 
 const NavUl = styled.nav`
@@ -39,22 +39,22 @@ class NavBar extends React.Component {
       <Nav>
         <NavUl>
           <NavItem href="/">
-            <FontAwesomeIcon icon={["far", "id-card"]} size="7x" />
+            <FontAwesomeIcon style={{color: '#2d2d2d'}} icon={["far", "id-card"]} size="5x" />
           </NavItem>
           <NavItem href="/portfolio">
-            <FontAwesomeIcon icon={["far", "file-code"]} size="7x" />
+            <FontAwesomeIcon style={{color: '#2d2d2d'}} icon={["far", "file-code"]} size="5x" />
           </NavItem>
           <NavItem href="/contact">
-            <FontAwesomeIcon icon={["fas", "envelope"]} size="7x" />
+            <FontAwesomeIcon style={{color: '#2d2d2d'}} icon={["fas", "envelope"]} size="5x" />
           </NavItem>
           <NavItem href="https://www.github.com/JCFlores">
-            <FontAwesomeIcon icon={["fab", "github"]} size="7x" />
+            <FontAwesomeIcon style={{color: '#2d2d2d'}} icon={["fab", "github"]} size="5x" />
           </NavItem>
           <NavItem href="https://www.linkedin.com/in/jose-c-flores/">
-            <FontAwesomeIcon icon={["fab", "linkedin"]} size="7x" />
+            <FontAwesomeIcon style={{color: '#2d2d2d'}} icon={["fab", "linkedin"]} size="5x" />
           </NavItem>
           <NavItem href="https://www.twitter.com/joseflores_io">
-            <FontAwesomeIcon icon={["fab", "twitter"]} size="7x" />
+            <FontAwesomeIcon style={{color: '#2d2d2d'}} icon={["fab", "twitter"]} size="6x" />
           </NavItem>
         </NavUl>
       </Nav>

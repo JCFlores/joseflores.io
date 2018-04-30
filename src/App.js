@@ -5,7 +5,7 @@ import reset from "styled-reset";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import Router from "./components/Router";
-import img from "./img/wood-laptop.jpg";
+import img from "./img/slice1.jpg";
 
 const baseStyles = () => injectGlobal`
   ${reset};
@@ -20,9 +20,10 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
-  margin: 6em 0 0 5em;
   position fixed;
-  background: url(${img}) left 10% top/cover no-repeat;
+  background: url(${img}) no-repeat;
+  background-size: cover;
+  background-position: 0% 0%;
   height: 100%;
   width: 100%;
 `;
@@ -45,7 +46,6 @@ class App extends React.Component {
       <div id="main">
         <Container>
           <NavBar />
-          <Header title={this.state.title} />
           <ContentArea>
             <Content>
               <Router />
