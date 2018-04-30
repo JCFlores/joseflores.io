@@ -14,8 +14,8 @@ const Nav = styled.section`
   z-index: 2;
   display: block;
   float: left;
-  background-color: #a1a1a1;
-  box-shadow: 0px 0px 1px 0px;
+  background-color: #5d5d5d;
+  box-shadow: 0px 0px 25px 1px;
 `;
 
 const NavUl = styled.nav`
@@ -43,9 +43,6 @@ class NavBar extends React.Component {
           </NavItem>
           <NavItem href="/portfolio">
             <FontAwesomeIcon style={{color: '#2d2d2d'}} icon={["far", "file-code"]} size="5x" />
-          </NavItem>
-          <NavItem href="/contact">
-            <FontAwesomeIcon style={{color: '#2d2d2d'}} icon={["fas", "envelope"]} size="5x" />
           </NavItem>
           <NavItem href="https://www.github.com/JCFlores">
             <FontAwesomeIcon style={{color: '#2d2d2d'}} icon={["fab", "github"]} size="5x" />

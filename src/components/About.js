@@ -7,7 +7,6 @@ import selfie from "../img/selfie.jpg";
 const AboutSection = styled.div`
   height: 90%;
   width: 70%;
-  margin: auto
   position: absolute;
   top: 5%
   left: 15%
