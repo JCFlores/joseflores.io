@@ -13,8 +13,8 @@ const Sticky = styled.div`
   position: absolute;
   background: #fdf3ac;
   padding: 0 0 3% 0;
-  width: 15em;
-  height: 12em;
+  width: 16em;
+  height: 14em;
   box-shadow: 4px 5px 18px 0px;
 `;
 

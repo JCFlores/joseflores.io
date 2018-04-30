@@ -43,7 +43,7 @@ class AboutMe extends React.Component {
         <Sticky 
           style={{ bottom: '7%', left: '0%' }} 
           title={"About Me ..."} 
-          content={"lorem"}
+          content={"Hi my name is Jose. I'm a full stack web developer with experience in React and Node. I'm also familiar with HTML5, CSS3, JavaScript, jQuery, Express, MySQL, and MongoDB. I graduated from a Full Stack Web Development program at SMU and I'm now working as a Teaching Assistant. I excited to continue learning while I am pursuing a Full stack position."}
         />
         <Sticky
           style={{ bottom: '0%', right: '-5%' }}
