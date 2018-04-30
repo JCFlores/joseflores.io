@@ -10,7 +10,7 @@ const PortfolioWall = styled.div`
   width: 92%;
   position: absolute;
   top: 30%;
-  left: 10%;
+  left: 9.75%;
 `;
 
 const Project = styled.a`
